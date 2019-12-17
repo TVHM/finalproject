@@ -1,0 +1,370 @@
+/* presets */
+ 
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	font-family:helvetica;
+}
+
+/* columns */
+.fullcontainer{
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.container{
+	max-width:950px;
+	margin:0 auto;
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.rfullcontainer{
+	display:flex;
+	flex-direction: row-reverse;
+	flex-wrap:wrap;
+}
+
+.rcontainer{
+	max-width:950px;
+	margin:0 auto;
+	display:flex;
+	flex-direction: row-reverse;
+	flex-wrap:wrap;
+}
+
+blockquoute {
+	float:right;
+	width:275px;
+	font-size:130%;
+	font-family: montserrat, sans-serif;
+	font-weight: 200;
+	font-style: normal;
+	color:aliceblue;
+	margin: 0px 0px 10px 10px;
+	padding: 10px;
+	border-top: 1px solid #665544;
+	border-bottom: 1px solid #665544;
+	
+	
+}
+.c100{
+	width:100%;
+}
+
+.c75{
+	width:75%;
+}
+
+.c66{
+	width:66.666667%;
+}
+
+.c50{
+	width:50%;
+}
+
+.c33{
+	width:33.333333%;
+}
+
+.c25{
+	width:25%;
+}
+
+/* nav */
+header{
+	border-bottom:1px solid #000;
+	position:relative;
+}
+
+header h1{
+	margin:0;
+}
+
+#logo{
+	font-family: palatino;
+	font-weight:normal;
+	text-decoration: none;
+	color:#aaa;
+	padding:10px;
+	display:inline-block;
+}
+
+#logo:hover{
+	color:#000;
+}
+
+#mb{
+	display:none;
+}
+
+nav{
+	position:fixed;
+	top:15px;
+	right:12px;
+}
+
+nav ul{
+	list-style: none;
+}
+
+nav li{
+	display:inline-block;
+}
+
+nav a{
+	text-decoration: none;
+	display:inline-block;
+	border:3px solid #aaa;
+	color:#aaa;
+	padding:5px 15px;
+}
+
+nav a:hover{
+	border:px solid #000;
+	color:#000;
+}
+
+footer p{
+margin-bottom:0;}
+
+/* common */
+
+img{
+	width:auto;
+	max-width:100%;
+}
+
+.tc{
+	text-align: center;
+}
+
+.btn{
+	text-decoration: none;
+	display:inline-block;
+	border:3px solid #f00;
+	color:#f00;
+	padding:5px 15px;
+}
+
+.btn:hover{
+	border:1px solid #000;
+	color:#000;
+}
+
+.a1{
+	background:#ddd;
+}
+
+.a2{
+	background:#ccc;
+
+}
+
+.p10{
+	padding:10px;
+}
+
+.p50{
+	padding:50px;
+}
+
+.p100{
+	padding:100px 0;
+}
+
+/* type */
+h1, h2, h3, h4, h5, h6{
+	font-family: josefin-sans, sans-serif;
+	font-weight: 300;
+	font-style: italic;
+	
+}
+
+h1{
+	font-weight:normal;
+	font-size:100px;
+	margin:30px 0;
+}
+
+h2, p{
+	margin-bottom:15px;
+}
+
+@media screen and (max-width:700px){
+	
+	.container, .fullcontainer, .rcontainer, .rfullcontainer{
+		display:block;
+	}
+	
+	.container, .rcontainer{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	
+	.c100, .c75, .c66, .c50, .c33, .c25{
+		width:100%;
+	}
+}
+
+@media screen and ( max-width:500px ){
+	nav{
+		display: none;
+		position:relative;
+		background:#000;
+		padding:5px;
+		right:0px;
+		top:0px;
+	}
+	
+	nav li{
+		display: block;
+		border-bottom:1px solid #fff;
+	}
+	
+	nav a{
+		width:100%;
+		border:none;
+	}
+	
+	nav a:hover{
+		border:none;
+		color:#fff;
+	}
+	
+	#mb{
+		display:block;
+		position:absolute;
+		top:13px;
+		right:11px;
+		color:#f00;
+		padding:7px;
+		border:1px solid #f00;
+		font-size:18px;
+	}
+
+
+blockquoute {
+	float:center;
+	width:600px;
+	font-size:100%;
+	font-family: montserrat, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	color:aliceblue;
+	margin: 0px 0px 10px 10px;
+	padding: 10px;
+	border-top: 1px solid #665544;
+	border-bottom: 1px solid #665544;
+	
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: josefin-sans, sans-serif;
+	font-weight: 300;
+	font-style: italic;
+	
+}
+
+h1{
+	font-weight:normal;
+	font-size:20px;
+	margin:30px 0;
+}	
+	
+	#hero{
+				background: url(assets/img/earth-space-cosmos-5439.jpg );
+				background-size: cover;
+				background-position: center center;
+				height:calc(100vh - 56px)
+			}
+
+			.overlay{
+				background:rgba(0,0,0,.5);
+				height:100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			
+			.overlay div{
+				max-width:600px;
+				padding:15px;
+			}
+			
+			.overlay h1, .overlay p{
+				color:#fff;
+				margin-bottom:15px;
+			}
+			
+			.overlay .btn{
+				color:#fff;
+				border:1px solid #fff;
+			}
+			
+			.overlay .btn:hover{
+				color:#ddd;
+				border:1px solid #ddd;
+			}
+	
+	.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+max-width:3px;
+	
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+	max-width:3px;
+}	
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+	max-width:3px;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+	max-width:3px;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+	max-width:3px;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+	max-width:3px;
+}
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+	max-width:3px;			
+}
+	.fa-vimeo {
+background: #ff5500;
+color: white;
+max-width:3px;	
+		
+	}
+	
+}
+
+
+
+
+
+
+
+
